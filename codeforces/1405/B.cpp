@@ -35,25 +35,17 @@ sim dor(const c&) { ris; }
 void test_case(){
     int n;
     cin >> n;
-    vector<int>a(n);
-    for(int i = 0; i < n; i++)cin >> a[i];
-    
-    long long ans = 0;
+    long long mn = LONG_LONG_MAX;
+    long long tot = 0;
     for(int i = 0; i < n; i++){
-        if(a[i] < 0){
-            ans -= min((long long)-a[i], ans);
-        }else{
-            ans += a[i];
+        int x;
+        cin >> x;
+        tot += x;
+        if(tot < mn){
+            mn = tot;
         }
-        //cout << ans << endl;
     }
-    
-    cout << ans << endl;
-    
-    
-    
-    
-    //cout << abs(mn) << endl;
+    cout << abs(mn) << endl;
     
 } 
 
