@@ -53,7 +53,6 @@ void test_case(){
 
 
 int main(){
-    ios_base::sync_with_stdio(false);
     
     int t = 1;
     //cin >> t;
