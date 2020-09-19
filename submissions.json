@@ -1274,6 +1274,24 @@
     ],
     "timestamp": "Jan/19/2021 20:32"
   },
+  "CF93218853": {
+    "contest_id": 1419,
+    "language": "GNU C++14",
+    "path": "codeforces/1419/A.cpp",
+    "platform": "Codeforces",
+    "problem_index": "A",
+    "problem_name": "Digit Game",
+    "problem_url": "https://codeforces.com/contest/1419/problem/A",
+    "submission_id": "CF93218853",
+    "submission_url": "https://codeforces.com/contest/1419/submission/93218853",
+    "tags": [
+      "games",
+      "greedy",
+      "implementation",
+      "*900"
+    ],
+    "timestamp": "Sep/19/2020 20:40"
+  },
   "CF93233050": {
     "contest_id": 1419,
     "language": "GNU C++14",
