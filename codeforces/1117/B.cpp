@@ -40,8 +40,9 @@ void test_case(){
     for(int i = 0; i < n; i++){
         cin >> a[i];
         if(a[i] >= mx1){
-            mx2 = mx1;
+            long long temp = mx1;
             mx1 = a[i];
+            mx2 = temp;
         }else if(a[i] > mx2){
             mx2 = a[i];
         }
