@@ -59,7 +59,7 @@ void test_case(){
     long long l = 0, r = 1e+18;
     while(r - l > 1){
         
-        long long mid = l + (r - l)/2;
+        long long mid = (r + l)/2;
         long long cnt = mid/n, rem = mid%n;
         long long x = fir.first + d[rem].first + cnt *  1LL * d[n].first;
 		long long y = fir.second + d[rem].second + cnt *  1LL * d[n].second;
