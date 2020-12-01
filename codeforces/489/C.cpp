@@ -52,9 +52,9 @@ void test_case(){
     int n_s = s;
     for(int i = 0; i < m; i++){
         mx[i] = min(n_s, 9);
-        //if(n_s <= 0){
-            //break;
-        //}
+        if(n_s <= 0){
+            break;
+        }
         n_s -= min(n_s, 9);
     }
     n_s = s - 1;
