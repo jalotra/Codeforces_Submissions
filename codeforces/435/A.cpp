@@ -39,20 +39,18 @@ void test_case(){
     vector<int>a(n);
     for(int i = 0; i < n; i++)cin >> a[i];
     
-    int curr = 0, result = 0;
-    for(int i = 0; i < n; i++){
-        if (curr + a[i] <= m)
+    int curr = 0, i = 0, ans = 0;
+    while(i < n){
+        while(i < n && curr + a[i] <= m){
             curr += a[i];
-        else
-        {
-            result++;
-            curr = a[i];
+            i++;
         }
-    }
-    if(curr > 0)result++;
+        curr = 0;
+        ans++;
+    }cout << ans << endl;
     
     
-    cout << result << endl;
+    
 } 
 
 
